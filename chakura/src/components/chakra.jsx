@@ -3,9 +3,14 @@ import React, { useState } from 'react'
 
 const chakra = () => {
         const [btn,setBtn] = useState("blue");
+        const [wrap,setWrap] = useState("black");
     const botton = ()=>{
             console.log("blue");
             setBtn("red");
+    }
+    const button = ()=>{
+        console.log("red");
+        setWrap("blue");
     }
 
   return (
@@ -21,7 +26,8 @@ const chakra = () => {
             <h1>こんにちは</h1>
         </Center>
         <Box>
-            <Box as='button' w={"300px"} height={"60px"} bgColor={"black"} color={"#fff"}>こんにちは</Box>
+            <Box as='button' w={"300px"} height={"60px"} bgColor={wrap} color={"#fff"} boxShadow={"1px 2px 4px #000"}
+            onClick={button}>こんにちは</Box>
         </Box>
     </Box>
   )
