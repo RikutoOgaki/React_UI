@@ -20,6 +20,9 @@ const chakra = () => {
         onClick={botton}>
             <h1>こんにちは</h1>
         </Center>
+        <Box>
+            <Box as='button' w={"300px"} height={"60px"} bgColor={"black"} color={"#fff"}>こんにちは</Box>
+        </Box>
     </Box>
   )
 }
